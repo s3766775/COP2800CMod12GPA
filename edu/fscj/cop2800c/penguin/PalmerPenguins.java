@@ -1,9 +1,12 @@
 // PalmerPenguins.java
-// D. Singletary
-// 3/14/25
+// Jihae Kim
+// 04/12/26
 // Palmer Penguins application
 
 package edu.fscj.cop2800c.penguin;
+
+import java.util.ArrayList;
+import edu.fscj.cop2800c.util.DataWrapper;
 
 public class PalmerPenguins {
     public static void main(String[] args) {
@@ -104,5 +107,19 @@ public class PalmerPenguins {
             }
         }
         
+        ArrayList<DataWrapper<Penguin>> wrappedPenguins = 
+            new ArrayList<DataWrapper<Penguin>>();
+
+        for (int i = 1; i <= 8; i++) {
+            Penguin penguin = analyzer.getPenguinBySampleNum(i);
+            if (penguin != null) {
+                wrappedPenguins.add(new DataWrapper<Penguin>(penguin));
+            }
+        }
+
+        if (!wrappedPenguins.isEmpty()) {
+            System.out.println("\nData Wrapper List:");
+            DataWrapper.displayList(wrappedPenguins);
+        }
     }
 }

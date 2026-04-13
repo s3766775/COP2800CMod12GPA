@@ -1,6 +1,6 @@
 // Penguin.java
-// D. Singletary
-// 3/15/25
+// Jihae Kim
+// 04/12/26
 // Represents a Palmer Penguin
 
 package edu.fscj.cop2800c.penguin;

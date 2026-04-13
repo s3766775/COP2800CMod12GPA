@@ -1,6 +1,6 @@
 // Bird.java
-// D. Singletary
-// 3/15/25
+// Jihae Kim
+// 04/12/26
 // Represents a bird base class
 
 package edu.fscj.cop2800c.penguin;
